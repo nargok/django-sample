@@ -1,1 +1,4 @@
 db.sqlite3
+brickset_app/__pycache__/*
+item/__pycache__/
+item/migrations/__pycache__/
