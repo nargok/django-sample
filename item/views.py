@@ -1,6 +1,7 @@
 # from django.shortcuts import render
-from django.http import HttpResponse
+from django.template.response import TemplateResponse
 
 # Create your views here.
 def hello(request):
-    return HttpResponse('Hello World')
+    context = {'message': 'メッセージ'}
+    return TemplateResponse(request, 'item/message.html', context=context)
